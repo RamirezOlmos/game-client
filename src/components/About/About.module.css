@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.about{
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+}
+
+.logos{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 20px;
+  grid-column: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-left: 320px;
+  max-width: 700px;
+  padding-top: 50px
+}
+
+.logo {
+  width: 110px;
+}
+
+.logoseq{
+  width: 100px;
+}
+
+.logored{
+  width: 250px;
+}
+
+.logoex{
+  width: 130px;
+}
+
+.logorea{
+  width: 100px;
+}
+

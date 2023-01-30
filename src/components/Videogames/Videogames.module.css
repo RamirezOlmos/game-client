@@ -1,0 +1,27 @@
+/*
+.showing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 99%;
+}
+*/
+
+.showing{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  justify-content: space-evenly;
+}
+
+#loading {
+  display: block;
+  margin-left: 400px;
+  margin-right: auto;
+	border-radius: 50px 50px 50px 50px;
+}
+
+h2 {
+  color: tomato;
+
+}

@@ -1,0 +1,27 @@
+.filter {
+    width: 480px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter div {
+    width: 160px;
+}
+
+.filter select {
+    width: 145px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    margin: 5px;
+}
+
+.filter select:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.filter option {
+    background: none;
+}

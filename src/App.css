@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-image: url("./background2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 120px;
+}
+
+.landing-page {
+  text-align: center;
+  padding-bottom: 0;
+}

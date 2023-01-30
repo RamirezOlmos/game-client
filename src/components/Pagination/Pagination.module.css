@@ -1,0 +1,35 @@
+.pagination {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px ;
+    background-color: rgba(0, 0, 0, 0.108);
+}
+
+.pagination button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.item button:hover {
+    cursor: pointer;
+    font-size: 130%;
+    text-shadow: 0 0 5px #fff,
+}
+
+/*
+.current {
+  background-color: none !important;
+  color:orange !important;
+  font-size: 25px !important;
+}
+*/
+
+#current {
+  background-color: none;
+  color:orange;
+  font-size: 25px;
+}
