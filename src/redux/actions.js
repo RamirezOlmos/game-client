@@ -12,7 +12,7 @@ export const FILTER_GAME_BY_SOURCE = 'FILTER_GAME_BY_SOURCE';
 
 export const getVideogames = () => {
   return function(dispatch) {
-    fetch('http://localhost:3001/videogames')
+    fetch('https://game-api-production.up.railway.app/videogames')
       .then((response) => response.json())
       .then((data) => dispatch(
         { type: GET_VIDEOGAMES, payload: data }))
@@ -25,7 +25,7 @@ export const getVideogames = () => {
 
 export const searchGameByName = (name) => {
   return function(dispatch) {
-    fetch(`http://localhost:3001/videogames?name=${name}`)
+    fetch(`https://game-api-production.up.railway.app/videogames?name=${name}`)
       .then((response) => response.json())
       .then((data) => dispatch(
         { type: SEARCH_GAME_BY_NAME, payload: data }))
@@ -38,7 +38,7 @@ export const searchGameByName = (name) => {
 
 export const getGameById = (id) => {
   return function(dispatch) {
-    fetch(`http://localhost:3001/videogames/${id}`)
+    fetch(`https://game-api-production.up.railway.app/videogames/${id}`)
       .then((response) => response.json())
       .then((data) => dispatch(
         { type: GET_GAME_BY_ID, payload: data }))
@@ -51,7 +51,7 @@ export const getGameById = (id) => {
 
 export const getGenres = () => {
   return function(dispatch) {
-    fetch(`http://localhost:3001/genres`)
+    fetch(`https://game-api-production.up.railway.app/genres`)
       .then((response) => response.json())
       .then((data) => dispatch(
         { type: GET_GENRES, payload: data }))
@@ -64,7 +64,7 @@ export const getGenres = () => {
 
 export const createGame = (game) => {
   return function(dispatch) {
-    fetch(`http://localhost:3001/videogames`, {
+    fetch(`https://game-api-production.up.railway.app/videogames`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
