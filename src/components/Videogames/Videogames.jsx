@@ -4,12 +4,12 @@ import styles from './Videogames.module.css';
 import loadingGift from './loading_animations.gif';
 
 
-const Videogames = ({videogames}) => {
+const Videogames = ({videogames, loaded}) => {
 
   return (
     <div className={styles.showing}>
       {
-        videogames.length ?
+        videogames.length || loaded  ?
         videogames.map((game) => {
           return (
             <Card

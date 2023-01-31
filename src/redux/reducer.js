@@ -9,7 +9,7 @@ import {
   ORDER_ASC_NAME,
   ORDER_DESC_NAME,
   FILTER_GAME_BY_SOURCE,
-  ERROR_GET_VIDEOGAMES,
+
 } from './actions.js';
 const ORDER_ASC_RATING = 'ORDER_ASC_RATING';
 const ORDER_DESC_RATING = 'ORDER_DESC_RATING';
@@ -23,7 +23,8 @@ const initialState = {
   filteredVideogames: [],
   orderBy: 'Select',
   filterBy: 'ALL',
-  filterBySource: 'ALL'
+  filterBySource: 'ALL',
+  loaded: false
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -62,7 +63,8 @@ const rootReducer = (state = initialState, action) => {
         filteredVideogames: [],
         orderBy: 'Select',
         filterBy: 'ALL',
-        filterBySource: 'ALL'
+        filterBySource: 'ALL',
+        loaded: false
       }
     case FILTER_GAME_BY_GENRE:
       let filterGames = [];

@@ -12,8 +12,9 @@ const Home = () => {
   const filteredGames = useSelector((state) => state.filteredVideogames);
   const filterBy = useSelector((state) => state.filterBy);
   const orderBy = useSelector((state) => state.orderBy);
+  let loaded = useSelector((state) => state.loaded);
   const videogames = useSelector((state) => state.videogames);
-  const errorVideogames = useSelector((state) => state.errorvideogames);
+
   const [page, setPage] = useState(1);
   const videogamesPerPage = 15;
 
@@ -33,6 +34,7 @@ const Home = () => {
     allVideogames = videogames;
   }
   else{
+    loaded = true;
     allVideogames = filteredGames;
   }
 
@@ -54,7 +56,8 @@ const Home = () => {
             <Filter paginate={paginate} />
           </div>
           <div className={styles.videogamessection}>
-            <Videogames videogames={currentGamesPerPage}/>
+            <Videogames videogames={currentGamesPerPage}
+                        loaded={loaded}/>
           </div>
           <Pagination 
             gamesPerPage={videogamesPerPage}
