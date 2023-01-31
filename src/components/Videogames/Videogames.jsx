@@ -9,7 +9,7 @@ const Videogames = ({videogames, loaded}) => {
   return (
     <div className={styles.showing}>
       {
-        videogames.length || loaded  ?
+        loaded || videogames.length  ?
         videogames.map((game) => {
           return (
             <Card
