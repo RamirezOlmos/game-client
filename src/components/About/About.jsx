@@ -1,9 +1,9 @@
-import node from './Node.js_logo.svg';
+import node from './nodejs.png';
 import express from './express-js.png';
-import postgres from './Postgresql_elephant.svg.png';
-import react from './1024px-React.svg.png';
+import postgres from './postgres.jpg';
+import react from './react.jpg';
 import redux from './1920px-Redux_Logo.png';
-import sequelize from './sequelize.svg';
+import sequelize from './sequelize.jpeg';
 import styles from './About.module.css';
 
 const About = () => {
